@@ -1,0 +1,89 @@
+/* Layout & Typography */
+.ledger-container {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.ledger-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 900;
+  color: #999999;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+/* Chip / Pill Selection */
+.pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.pill-input {
+  display: none;
+} /* Hide the actual radio button */
+
+.pill-button {
+  padding: 8px 16px;
+  border: 2px solid #999999; /* Greyed out initially */
+  border-radius: 20px;
+  color: #999999;
+  font-size: 12px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pill-input:checked + .pill-button {
+  border-color: #333333;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+/* Counter / Stepper */
+.counter-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+.counter-btn {
+  width: 60px;
+  height: 50px;
+  background: #333333;
+  color: #ffffff;
+  border: none;
+  font-size: 24px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.counter-input {
+  flex: 1;
+  height: 50px;
+  background: #333333;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+/* Submit */
+.ledger-button {
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+  padding: 20px;
+  border: none;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+}
