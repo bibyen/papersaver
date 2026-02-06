@@ -9,5 +9,5 @@ dev:
 lint:
 	npm run lint
 
-build:
+build: lint
 	npm run build
